@@ -1,7 +1,7 @@
 import java.util.*;
 public class Palindrome{   
       public static boolean isPalindrome(String s){
-      if (s.length() < 2){ //a string that has 0 or 1 letter is a palindrome
+      if (s.equals(" ") || s.length() < 2){ //a string that has 0 or 1 letter is a palindrome
          return true;
       }
       else if (s.charAt(0) == s.charAt(s.length()-1)){ // checks if the first letter of the string equals the last latter of the string
